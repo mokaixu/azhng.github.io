@@ -4,6 +4,8 @@ title:  "Hello World"
 date:   2017-08-08 23:04:45 -0400
 ---
 
+### Hello World
+
 I can't even remember how long have I been helplessly staring at this empty document without doing anything. Trying to figure out what to say for this very first blog post without making myself look like a complete fool. Trying to carefully word every single sentence so that I would look like someone who has received proper literacy eduction. But for a nerd that have spent more time talking to machines than living humans since the age of 15, it's apparently not a very trivial task. Well, I suppose nothing in life is going to be trivial, isn't it? So if I make myself look like a complete fool in this post, so be it. It's easier to learn things when you just treat yourself as an idiot that knows absolutely nothing. 
 
 So if the rest of this post looks more like a core dump from a segmentation fault than the writing from an intelligent human being, please accept my sincere apology. /* I meant it */
