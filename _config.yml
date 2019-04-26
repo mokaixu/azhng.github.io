@@ -20,6 +20,7 @@ theme: the-plain
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-sitemap
 
 remote_theme: heiswayi/the-plain
 
