@@ -1,0 +1,5 @@
+commands:
+  run:
+    run:  cd $HOME/src/github.com/azhng.github.io; bundle exec jekyll s
+    desc: run jekyll server
+
