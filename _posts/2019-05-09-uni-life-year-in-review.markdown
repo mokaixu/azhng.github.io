@@ -88,12 +88,33 @@ I haven't taken much Non-CS/Math courses in past two years. But for the ones tha
 
 # Internships
 
-### [Dessa](http://dessa.com/)
+### [TD Lab](https://www.tdlab.io/)
+
+This was my first intership.
+To be completely honest, there is really not much I was able to learn from this internship.
+Most of the full times at this place have all left within the next two years after the end of my internship.
+Funny story, one of those full times actually joined Shopify with me the same time as an intern during my third internship.
+I learned from him that most of the full times during that time were actually preparing for the technical interviews for Google and Shopify 🤦 .
+Almost every single project created in this place got immediately archived after the interns created them left the lab.
+
+### [Dessa](https://dessa.com/)
+
+I started working at Dessa back in the beginning of 2018.
+That was actually back when Dessa was still called Deeplearni.ng.
+Apparently, they got that domain from a tiny Nigerian ISP and they had to wire about ~$20 every year to Nigeria.
+Allegedly, Andrew Ng got a bit jealous when he found out about the company one time during the NIPS conference in Montreal.
+
+When I first joined the Dessa, it was still a very small startup which just raised $9M for its Series A.
+There were about a dozen developers and located in a small office on the edge of downtown Toronto.
+About half of Dessa's engineers were Data Scientists who trained and deployed ML models for Dessa's clients
+The other half of engineers where developers who were working on an internal project called Frontier.
+I spent my entire internship in the Frontier team, and there hasn't been a single day since I left Dessa when I didn't miss it.
+Everytime if I was in town for more than two days, I would always go back to the office and say hi.
+It might sound strange but, ever since I left home when I was 15, Dessa was the first place since then where I truly felt I belonged to.
+From the bottom of my heart, I loved and missed every single second I spent at that place and every single person that I have worked with.
+
+Dessa was really young back then. It was stumbling and trying very hard to find its way in a world where startups are dying like flies.
+But judgeting from what I saw last time when I went back, I truly think it has matured and it is on track to unleash all of its potentials.
 
 
-### [Shopify](http://shopify.com/)
-
-
-# Life
-
-### [CSC](http://csclub.uwaterloo.ca/)
+### [Shopify](https://shopify.com/)
