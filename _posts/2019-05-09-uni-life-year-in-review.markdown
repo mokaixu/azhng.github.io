@@ -4,6 +4,7 @@ title:  "Uni life year-in-review"
 date:   2019-05-09 23:04:45 -0400
 ---
 
+# -------------------- THIS IS A DRAFT --------------------
 
 So it has been almost two years since my last blog post and I have to admit this one is definitely long overdue.
 But between all the school works and job hunting, it just felt like I never had the time and mental energy to sit down and reflect on what had happened in the past two years. 
@@ -112,9 +113,29 @@ I spent my entire internship in the Frontier team, and there hasn't been a singl
 Everytime if I was in town for more than two days, I would always go back to the office and say hi.
 It might sound strange but, ever since I left home when I was 15, Dessa was the first place since then where I truly felt I belonged to.
 From the bottom of my heart, I loved and missed every single second I spent at that place and every single person that I have worked with.
+My mentor threw a goodbye part at the end of my internship.
+Both of us got pretty drunk and I remembered I was hugging him at the end of the party like a kid that's about to leave home to go to college for the first time.
 
 Dessa was really young back then. It was stumbling and trying very hard to find its way in a world where startups are dying like flies.
 But judgeting from what I saw last time when I went back, I truly think it has matured and it is on track to unleash all of its potentials.
 
-
 ### [Shopify](https://shopify.com/)
+
+The experience I had at Dessa kind of gave me an unrealistic expectation for my next internship.
+On the surface, Shopify is everything that I would ever hope for in a tech company:
+a fancy office with unlimited supplies of snacks and beverages and free lunches and corporate housing and almost 30% increase of compensation compare to Dessa.
+They even had this extravagant intern retreat where they shipped all of Shopify interns to a national park to spend the weekend.
+I was able to learn so much from my team and my mentor and problems that I was solving at Shopify were both fun and challenging.
+There were so much that Shopify has taught me for which I will be forever grateful.
+
+Nevertheless, I couldn't help but felt something was missing.
+That sense of belonging that I felt at Dessa was simply not there.
+It was nobody's fault.
+No one was to be blamed for that but me and me alone because of my unrealistic expectation of a company.
+
+I was like this kid who has always believed in Santa Claus until one day to be told the truth by an adult.
+When I left Shopify my feeling was mixed and my thoughts were confused.
+Sometime I questioned myself what is it that I am chasing after and yet I really can't give myself a clear answer.
+
+I finished last two years of my undergrad with more questions than I first started.
+Though good thing is, I still have another two years left in my undergrad to figure that out.
