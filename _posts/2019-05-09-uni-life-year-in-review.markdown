@@ -8,7 +8,7 @@ So it has been almost two years since my last post and I have to admit this one 
 But between all the school works and job hunting, it just felt like I never had the time and mental energy to sit down and reflect on what had happened in the past two years. 
 And I have to admit, it's getting more and more difficult to recall everything that has happened in the last two years.
 Memories that were once clear are now blurry and confusing.
-Though I am not entirely sure if this has something to do with my increasing consumption of alcohol over the years.
+Though I am not entirely sure if this has something to do with the increasing amount of caffeine that I have been consuming.
 
 
 Anyways, a lot had happened in the past two years.
