@@ -4,8 +4,6 @@ title:  "Uni life year-in-review"
 date:   2019-05-09 23:04:45 -0400
 ---
 
-# -------------------- THIS IS A DRAFT --------------------
-
 So it has been almost two years since my last blog post and I have to admit this one is definitely long overdue.
 But between all the school works and job hunting, it just felt like I never had the time and mental energy to sit down and reflect on what had happened in the past two years. 
 And I have to admit, it's getting more and more difficult to recall everything that has happened in the last two years.
@@ -69,10 +67,10 @@ On one hand Brad was indeed a really great prof, but on the other hand I was sti
 It was absolutely brutal exam and it was probably my single biggest L until I had my CS 341 midterm.
 
 Jokes aside, CS 442 was hands down the best CS course I have taken so far.
-It covered the very fundemental constructs of programming language in great details.
-The main topics of this course include lambda calculus, type system, type inference, logical programming and formal sementics.
+It covered the very fundamental constructs of programming language in great details.
+The main topics of this course include lambda calculus, type system, type inference, logical programming and formal semantics.
 The OOP part of the course was a bit meh but this was mainly because Brad fast tracked it since most of the people in class were already familiar with it.
-Though this course didn't make me obsessed with creating my own programming language like my friend [@Dhruv Jauhar](https://github.com/Dhruv-Jauhar),
+Though this course didn't make me obsessed with creating my own programming language like my friend [@Dhruv Jauhar](https://github.com/null-sleep),
 it still made me to start to rethink what makes a great programming language.
 
 
@@ -91,7 +89,7 @@ I haven't taken much Non-CS/Math courses in past two years. But for the ones tha
 
 ### [TD Lab](https://www.tdlab.io/)
 
-This was my first intership.
+This was my first internship.
 To be completely honest, there is really not much I was able to learn from this internship.
 Most of the full times at this place have all left within the next two years after the end of my internship.
 Funny story, one of those full times actually joined Shopify with me the same time as an intern during my third internship.
@@ -110,14 +108,14 @@ There were about a dozen developers and located in a small office on the edge of
 About half of Dessa's engineers were Data Scientists who trained and deployed ML models for Dessa's clients
 The other half of engineers where developers who were working on an internal project called Frontier.
 I spent my entire internship in the Frontier team, and there hasn't been a single day since I left Dessa when I didn't miss it.
-Everytime if I was in town for more than two days, I would always go back to the office and say hi.
+Every time if I was in town for more than two days, I would always go back to the office and say hi.
 It might sound strange but, ever since I left home when I was 15, Dessa was the first place since then where I truly felt I belonged to.
 From the bottom of my heart, I loved and missed every single second I spent at that place and every single person that I have worked with.
 My mentor threw a goodbye part at the end of my internship.
 Both of us got pretty drunk and I remembered I was hugging him at the end of the party like a kid that's about to leave home to go to college for the first time.
 
 Dessa was really young back then. It was stumbling and trying very hard to find its way in a world where startups are dying like flies.
-But judgeting from what I saw last time when I went back, I truly think it has matured and it is on track to unleash all of its potentials.
+But judging from what I saw last time when I went back, I truly think it has matured and it is on track to unleash all of its potentials.
 
 ### [Shopify](https://shopify.com/)
 
