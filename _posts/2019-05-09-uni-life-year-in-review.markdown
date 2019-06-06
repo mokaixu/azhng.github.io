@@ -4,7 +4,7 @@ title:  "Uni life year-in-review"
 date:   2019-05-09 23:04:45 -0400
 ---
 
-So it has been almost two years since my last blog post and I have to admit this one is definitely long overdue.
+So it has been almost two years since my last post and I have to admit this one is definitely long overdue.
 But between all the school works and job hunting, it just felt like I never had the time and mental energy to sit down and reflect on what had happened in the past two years. 
 And I have to admit, it's getting more and more difficult to recall everything that has happened in the last two years.
 Memories that were once clear are now blurry and confusing.
@@ -35,7 +35,7 @@ and I was lucky enough to have some of the best CS professors in the faculty.
 ### [CS 241E](https://www.student.cs.uwaterloo.ca/~cs241e/)
 The content of the CS 241E was fairly standard introduction to the general compiler constructs,
 including parsing, tokenization, DFA/NFAs, code generation and garbage collection.
-However, this course was my first introduction to Scala, one of my favorite programming langauges til this day.
+However, this course was my first introduction to Scala, one of my favorite programming languages until this day.
 It was taught by [Ondřej Lhoták](https://plg.uwaterloo.ca/~olhotak/),
 and Ondřej was one of the few professors that I met who actually does care about his students.
 I remember once after I spent two days desperately trying to debug a weird issue of my compiler, I came to Ondřej for help.
@@ -135,5 +135,14 @@ I was like this kid who has always believed in Santa Claus until one day to be t
 When I left Shopify my feeling was mixed and my thoughts were confused.
 Sometime I questioned myself what is it that I am chasing after and yet I really can't give myself a clear answer.
 
+# Beyond
+
 I finished last two years of my undergrad with more questions than I first started.
 Though good thing is, I still have another two years left in my undergrad to figure that out.
+This may sound sadder than what it actually is.
+But I think this is probably one of the most important lesson I have learned,
+is to embrace uncertainty.
+All plans are doomed to fall apart at some point no matter how well it was planned.
+I guess it's just way easier to enjoy life, instead of planning every single details,
+just give it your best effort and wait to see what happens afterwards.
+
