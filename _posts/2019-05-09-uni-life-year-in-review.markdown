@@ -111,7 +111,7 @@ I spent my entire internship in the Frontier team, and there hasn't been a singl
 Every time if I was in town for more than two days, I would always go back to the office and say hi.
 It might sound strange but, ever since I left home when I was 15, Dessa was the first place since then where I truly felt I belonged to.
 From the bottom of my heart, I loved and missed every single second I spent at that place and every single person that I have worked with.
-My mentor threw a goodbye part at the end of my internship.
+My mentor threw a goodbye party at the end of my internship.
 Both of us got pretty drunk and I remembered I was hugging him at the end of the party like a kid that's about to leave home to go to college for the first time.
 
 Dessa was really young back then. It was stumbling and trying very hard to find its way in a world where startups are dying like flies.
