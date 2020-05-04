@@ -2,4 +2,7 @@ commands:
   run:
     run:  cd $HOME/src/github.com/azhng.github.io; bundle exec jekyll s
     desc: run jekyll server
+  run-draft:
+    run:  cd $HOME/src/github.com/azhng.github.io; bundle exec jekyll s --draft
+    desc: run jekyll server with draft rendered
 
