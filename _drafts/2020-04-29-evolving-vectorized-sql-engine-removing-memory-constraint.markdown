@@ -73,9 +73,9 @@ to perform multiple steps of computation:
 
 Observe the computation steps within each iteration of the loop. It involves a hash computation, multiple branching
 and value comparisons (which can be potentially very expensive depending on the SQL data types) and insertion (which
-can potentially lead to memory allocation and copying). The point of vectorized engine is to reduce one big complicated
+can potentially lead to memory allocation and copying). The point of a vectorized engine is to reduce one big complicated
 loop into multiple small and tight loop with very simple operation inside the loop body. This can improve the program's
-cache friendliness and reduce branch mispredict inside CPU.
+cache friendliness and reduce branch mispredict inside the CPU.
 
 Therefore, as of CockroachDB 19.2, the vectorized unordered distinct operator was implemented using our own vectorized
 hash table. It was implemented based on Marcin Zukowski's paper: "[Balacing Vectorized Query Execution iwth Bandwith-Optimized
@@ -84,10 +84,9 @@ Definitely check out our previous [blog post][1] if you are interested in how do
 
 However, since the original vectorized hash table was designed for hash join operator, it stored a lot of extra information
 that was not necessary for unordered distinct operator. For example, in order to implement hash join, the hash table not
-only need to store the distinct tuples, it also needs to store all tuples that are identical to that tuple. It also need
+only needed to store the distinct tuples, it also needed to store all tuples that are identical to that tuple. It also needed
 to compute data structures to efficiently traverse through all those identical tuples. But in unordered distinct
-operator, none of those auxiliary data structure and computation is required, since the only thing we care about is
-the first distinct tuple we encounter, then we can discard all subsequent tuples that are identical to the first one.
+operator, none of those auxiliary data structures and computations are required. Since the only thing we care about is the first distinct tuple we encounter, then we can discard all subsequent tuples that are identical to the first one.
 And this is the key insight of how we improve the performance of unordered distinct operator.
 
 # Vectorized Hash Table
@@ -224,9 +223,9 @@ distinct tuples into memory, we reduce total number of comparisons we perform th
 
 In order to fully implement the distinct mode into vectorized hash table, we need to modify the algorithm
 of building the hash table quite a bit. First, since the main goal is to eliminate the need to buffer the
-entire input into memory, we can no longer consume the entire input and then buffer them in memory in the
+entire input into memory, we should not consume the entire input and then buffer them in memory in the
 beginning of the algorithm. Instead, we would need to build the hash table incrementally. The intuition is
-quite simple, when we fetched a new batch of tuples, we first perform de-duplication within that batch. Once
+quite simple. When we fetched a new batch of tuples, we first perform de-duplication within that batch. Once
 all duplicated tuples are removed from the batch, we check the remaining tuples within that batch against
 the already buffered tuples to see if there is any additional duplicated tuples. Note that since we only
 insert batches that only contain unique tuples, we can be sure that there does not exist any duplicated tuples
@@ -278,12 +277,12 @@ it stops the linked list traversal as soon as it founds the first identical tupl
 first tuple will be our choice of the distinct tuple. The algorithm itself is quite straight forward, however,
 if you are paying close attention, this optimiztion cannot completely guarantee the correctness of the algorithm.
 
-Remeber that we mentioned previously, once we build the hash chain, the values of the `keyID`s inside the hash
+We previously mentioned that once we build the hash chain, the values of the `keyID`s inside the hash
 chain will be in a monotonically decreasing order. In other words, this means the "head" of the hash chain is going
-the be the tuple with largest `keyID`. Now also observe that with our de-duplication algorithm, we immediately
+to be the tuple with the largest `keyID`. Now also observe that with our de-duplication algorithm, we immediately
 stop hash chain traversal once we encounter a tuple that has the identical value, and that tuple will be emitted
-as the distinct tuple. Since the ordered of the hash chain is reversed, this means the `head`, a.k.a. the last
-occurrence of the tuple inside a batch will be the one that gets emitted. So concretly, recall our previous example: 
+as the distinct tuple. Since the order of the hash chain is reversed, this means the `head`, a.k.a. the last
+occurrence of the tuple inside a batch will be the one that gets emitted. Recall our previous example: 
 
 ```
 first: +------+-------+  next: +-------+------+
@@ -306,11 +305,11 @@ first: +------+-------+  next: +-------+------+
 ```
 
 In this case, since we are starting to probe from `keyID=5` and `keyID=6`, we will eventually emit the following
-`keyID`s: 5, 6 and 4. This seemingly to be compliant with the SQL standard, since the SQL standard does not require
+`keyID`s: 5, 6 and 4. This appears to be compliant with the SQL standard, since the SQL standard does not require
 the `SELECT DISTINCT` query to emit resulting tuple in any order without the `ORDERD BY` clause. However, inside
 of CockroachDB's SQL engine, different SQL operators can be used as building blocks for more complicated
 queries. Over the course of many releases, all our previous unordered distinct operators maintained this implicit
-behaviour of emitting the first distinct tuple it encounters in the input, instead of the last tuple as we have
+behaviour of emitting the first distinct tuple it encounters in the input instead of the last tuple as we have
 seen in our optimized algorithm. This behaviour is being depended on by CockroachDB's query planner when it decides
 to use unordered distinct operator as the input for other SQL operators. Therefore, in order to maintain
 compatibility with this assumption, we need to make sure that hash table emits the first distinct tuple it encounters,
@@ -318,7 +317,7 @@ instead of the last.
 
 The solution towards to this problem is essentially reverse the ordered of the linked list. Since the de-duplication
 process starts with the head of the hash chain, if we can ensure the value of `keyID`s within the hash chain is in
-monotonically increasing order, we can be sure that the hash table will emit the first tuple it encountered. As the
+monotonically increasing order, we can be sure that the hash table will emit the first tuple it encountered. As a
 result, we updated the `buildNextChains` function to the following:
 
 
@@ -402,17 +401,17 @@ Distinct/Unordered/newTupleProbability=0.100/rows=65536/cols=2/ordCols=0-8    8.
 Distinct/Unordered/newTupleProbability=0.100/rows=65536/cols=4/ordCols=0-8    14.0MB ± 0%     2.2MB ± 0%   -83.99%  (p=0.000 n=9+10)
 ```
 
-I hope you enjoyed learning how our vectorized hash table work under the hood and how we
-continously evolving our algorithms and implementations. What I have presented in this blog
-post is only a tip of the iceberg of what we have worked on for the vectorized engine that's
-coming in CockroachDB 20.1 release. I am very grateful for the opportunity to work with the
+I hope you enjoyed learning about how our vectorized hash table works under the hood and how we
+continously evolve our algorithms and implementations. What I have presented in this blog
+post is only the tip of the iceberg of what we have worked on for the vectorized engine that's
+coming in the CockroachDB 20.1 release. I am very grateful for the opportunity to work with the
 absolute brilliant engineers at Cockroach Labs and I want to really thank my mentor Alfonso,
 my manager Jordan and my teammate Yahor for this amazing internship. Thank you Cockroach Labs,
 it has been a great journey.
 
 # P.S.
 
-// TODO(azhng): hiring plug?
+// TODO(azhng): hiring plug? // don't forget
 
 [1]: https://www.cockroachlabs.com/blog/vectorized-hash-joiner
 [2]: https://www.cockroachlabs.com/blog/how-we-built-a-vectorized-execution-engine/
